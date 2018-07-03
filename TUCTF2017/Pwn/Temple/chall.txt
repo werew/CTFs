@@ -1,0 +1,12 @@
+Temple 500
+
+Have you come to gain wisdom at the temple?
+
+nc temple.tuctf.com 4343
+
+UPDATE:
+the temple binary has been updated. Please redownload.
+
+temple - md5: 8e61e448093f96043512bd3580223124
+libc.so.6 - md5: 8548e4731a83e6ed3fc167633d28c21f
+

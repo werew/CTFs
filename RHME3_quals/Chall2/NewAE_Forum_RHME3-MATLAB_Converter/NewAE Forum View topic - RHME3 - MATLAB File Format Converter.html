@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html dir="ltr" class=" js no-mobile desktop no-ie ff ff54 root-section w-1290 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 gt-1280 lt-1440 lt-1680 lt-1920 no-portrait landscape gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius no-cssreflections csstransforms csstransitions no-touch no-retina fontface domloaded" id="viewtopic-page" lang="en-gb"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="author" content="SiteSplat | www.sitesplat.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Set the viewport width to device width for mobile -->
+<meta name="Description" content=""> <!-- Set Your forum description here inside the "" tag -->
+<meta name="Keywords" content=""> <!-- Set Your forum keywords here inside the "" tag and make sure they are separated by a comma -->
+<meta name="application-name" content="BBOOTS"><!-- WIN8 Tiles setup -->
+<meta name="msapplication-TileColor" content="#ffffff"><!-- WIN8 Tiles setup --><!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<title>NewAE Forum View topic - RHME3 - MATLAB File Format Converter</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - NewAE Forum" href="https://forum.newae.com/feed.php"><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="https://forum.newae.com/feed.php?mode=topics"><link rel="alternate" type="application/atom+xml" title="Feed - Forum - Side Channel Power Analysis" href="https://forum.newae.com/feed.php?f=9"><link rel="alternate" type="application/atom+xml" title="Feed - Topic - RHME3 - MATLAB File Format Converter" href="https://forum.newae.com/feed.php?f=9&amp;t=362"><!-- phpBB Premium style name: BBOOTS (3.0.2) @SiteSplat.com --><!-- CSS files start here-->
+<link href="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/style.css" rel="stylesheet">
+<!-- Google free font here -->
+<link href="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/css.css" rel="stylesheet" type="text/css">
+<link href="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/css_002.css" rel="stylesheet" type="text/css">
+<!-- CSS files --><!-- Scripts start here after the jquery.js -->
+<script src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/head.js"></script>
+<script type="text/javascript" src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/jquery.js"></script><script type="text/javascript" src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/bootstrap.js"></script><script type="text/javascript" src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/bootstrap-select.js"></script><script type="text/javascript" src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/forum_fn.js"></script><script type="text/javascript" src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/twitterFetcher_v10_min.js"></script><script type="text/javascript" src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/footable.js"></script><script>
+// this loads jquery asyncrounously & in parallel
+head.load("//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js", "./styles/BBOOTS/theme/bootstrap/js/bootstrap.min.js", "./styles/BBOOTS/theme/bootstrap/js/bootstrap-select.min.js", "./styles/BBOOTS/template/forum_fn.js", "./styles/BBOOTS/theme/js/twitterFetcher_v10_min.js", "./styles/BBOOTS/theme/footable/js/footable.min.js");
+</script>
+<script>
+function find_username(e){popup(e,760,570,"_usersearch");return false}var jump_page="Enter the page number you wish to go to:";var on_page="1";var per_page="";var base_url="";var style_cookie="phpBBstyle";var style_cookie_settings="; path=/; domain=newae.com";var onload_functions=new Array;var onunload_functions=new Array;window.onload=function(){for(var i=0;i<onload_functions.length;i++){eval(onload_functions[i])}};window.onunload=function(){for(var i=0;i<onunload_functions.length;i++){eval(onunload_functions[i])}}
+</script>
+
+
+<script type="text/javascript" src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/504660720378589185.json"></script></head>
+<body id="phpbb" class="section-viewtopic ltr">
+<div id="wrap" class="corners container">
+  <!-- start content -->
+  <div id="content-forum">
+    <div class="padding_0_40">
+	<section class="social-top">
+		<div class="pull-right">
+			<a title="" data-original-title="Google+" href="#1"><i class="fa fa-google-plus-square google-plus-color"></i></a>
+			<a title="" data-original-title="Github" href="#2"><i class="fa fa-github-square github-color"> </i></a>
+			<a title="" data-original-title="Pinterest" href="#4"><i class="fa fa-pinterest-square pinterest-color"> </i></a>
+			<a title="" data-original-title="Facebook" href="#5"><i class="fa fa-facebook-square facebook-color"> </i></a>
+		    <a title="" data-original-title="Twitter" href="#6"><i class="fa fa-twitter-square twitter-color"> </i></a>
+			<a title="" data-original-title="Bitbucket" href="#6"><i class="fa fa-bitbucket-square facebook-color"> </i></a>
+			<a title="" data-original-title="rss" href="https://forum.newae.com/feed.php"><i class="fa fa-rss-square rss-color"> </i></a>
+		</div>
+    </section>
+	
+<!-- Header block -->
+    <header class="header" role="banner"> 
+     <div class="topArea"> <!-- Logo block -->
+	  <div class="leftArea">
+		<div class="logo-transition">
+		 <a class="logo" href="https://forum.newae.com/index.php?sid=f2965996ad766597b225a992d0a990b8" title="" data-original-title=""><span>NewAE</span> Forum</a>
+		</div>
+		 <p class="site-info">ChipWhisperer and Other Products <i class="fa fa-umbrella"></i></p>
+		<div class="clearfix"></div>
+	  </div>  
+	   <!-- Main navigation block -->
+
+<nav class="mainnav" role="navigation" aria-label="Primary">
+
+	  <ul>
+
+		<li class="nav-icon">
+
+			<a href="https://forum.newae.com/index.php?sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title="">Home <span class="has-sub"><i class="fa fa-home"></i></span></a>
+
+			<p>The Main stuff</p>
+
+		 <ul class="submenu greydout">
+
+			
+
+			<li><a href="https://forum.newae.com/faq.php?sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><i class="fa fa-question-circle"></i> FAQ</a><span></span></li>
+
+            <li><a href="https://forum.newae.com/memberlist.php?mode=leaders&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><i class="fa fa-group"></i> The team</a></li>
+
+	     </ul>
+
+		</li>
+
+
+
+		<li class="nav-icon">
+
+			<a href="#" data-original-title="" title="">Forum <span class="has-sub"><i class="fa fa-comments"></i></span></a>
+
+			<p>See the trends</p>
+
+		<ul class="submenu greydout">
+
+		
+
+        <li><a href="https://forum.newae.com/search.php?search_id=unanswered&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><i class="fa fa-search"></i> View unanswered posts</a><span></span></li>
+
+        
+
+		<li><a href="https://forum.newae.com/search.php?search_id=active_topics&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><i class="fa fa-star"></i> View active topics</a><span></span></li>
+
+					   
+
+		
+
+		</ul>
+
+		</li>
+
+										
+
+		<li class="nav-icon">
+
+			<a href="#" data-original-title="" title="">Search <span class="has-sub"><i class="fa fa-search fa fa-flip-horizontal"></i></span></a>
+
+			<p>Search it up</p>
+
+		<ul class="submenu greydout">
+
+			<li><a href="https://forum.newae.com/search.php?sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><i class="fa fa-search fa fa-flip-horizontal"></i> Advanced search</a><span></span></li>
+
+								
+
+			
+
+			<li><a href="#" data-original-title="" title=""> No Icon here at all</a><span></span></li>
+
+			<li><a href="#" data-original-title="" title=""> No Icon here at all</a><span></span></li>
+
+		</ul>
+
+		</li>
+
+
+
+		
+
+		<li class="nav-icon">
+
+			<a href="https://forum.newae.com/ucp.php?mode=login&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title="">Login <span class="has-sub"><i class="fa fa-sign-in"></i></span></a>
+
+			<p>Hang around</p>
+
+		</li>
+
+		
+
+	    <li class="nav-icon">
+
+			<a href="https://forum.newae.com/ucp.php?mode=register&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title="">Register <span class="has-sub"><i class="fa fa-thumbs-up"></i></span></a>
+
+			<p>Join the club</p>
+
+		</li>
+
+	    
+
+	  </ul>
+
+		<div class="navBtn"><span>MENU</span>
+
+		 <a data-toggle="collapse" data-target="#responsive-navigation" class="listen_menu fa fa-align-justify" href="javascript:void(0);" title="" data-original-title=""></a>
+
+		 
+
+		 <a class="fa fa-sign-in" href="https://forum.newae.com/ucp.php?mode=login&amp;sid=f2965996ad766597b225a992d0a990b8" title="" data-original-title=""></a>
+
+		 
+
+		</div>
+
+</nav> 
+
+<!-- Main navigation block --><!-- MOBILE Navigation block --><!-- Everything you want hidden at 940px or less, place within here -->
+
+    <nav class="hidden-lg hidden-md hidden-sm">
+
+	 <div id="responsive-navigation" class="collapse">
+
+		<ul class="flexnav list-unstyled">
+
+		
+
+		    <li><a href="https://forum.newae.com/ucp.php?mode=register&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><i class="fa fa-thumbs-up"></i> Register</a></li>
+
+	    
+
+			<li><a href="https://forum.newae.com/faq.php?sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><i class="fa fa-question-circle"></i> FAQ</a></li>
+
+	    
+
+		    <li><a href="https://forum.newae.com/memberlist.php?mode=leaders&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><i class="fa fa-group"></i> The team</a></li>
+
+		
+
+			
+
+		<li class="item-with-ul">
+
+			<a href="https://forum.newae.com/search.php?sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><i class="fa fa-search"></i> Advanced search</a>
+
+		     <ul class="collapse viewdetails list-unstyled">
+
+    
+
+        <li><a href="https://forum.newae.com/search.php?search_id=unanswered&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><i class="fa fa-search"></i> View unanswered posts</a></li>
+
+        
+
+		<li><a href="https://forum.newae.com/search.php?search_id=active_topics&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><i class="fa fa-star"></i> View active topics</a></li>		   
+
+    
+
+             </ul>
+
+			  <a class="touch-button" href="javascript:void(0);" data-toggle="collapse" data-target=".viewdetails" data-original-title="" title=""><i class="navicon fa fa-sort-down"></i></a>
+
+		</li>
+
+		   
+
+	<!-- BLOCK WITH SUBMENU EXAMPLE
+
+	
+
+		<li class="item-with-ul">
+
+			  <a href="#4"><i class="fa fa-search"></i> Submenu Group 1</a>
+
+		     <ul class="collapse viewsubmenu list-unstyled">
+
+                <li><a href="#5">SubLink 1</a></li>
+
+                <li><a href="#6">SubLink 2</a></li>
+
+                <li><a href="#7">SubLink 3</a></li>
+
+                <li><a href="#8">SubLink 4</a></li>
+
+             </ul>
+
+			  <a class="touch-button" href="javascript:void(0);" data-toggle="collapse" data-target=".viewsubmenu"><i class="navicon fa fa-sort-down"></i></a>
+
+		</li>
+
+		
+
+    BLOCK WITH SUBMENU EXAMPLE -->
+
+		   
+
+        </ul>
+
+	  </div>
+
+    </nav> 
+
+<!-- MOBILE Navigation block -->
+     </div>
+    </header> 
+<!-- Header block --><!-- Subheader block -->
+    <section class="subheader">
+      <div class="clearfix">
+	    <div class="fxicon">
+			<i class="fa fa-comments"></i>
+			  
+		</div>
+		
+	    <ul class="index-pos pull-left">
+            <li class="index-title"><h1>Topic Title</h1></li><li class="index-sub">Topic description</li>
+			  
+        </ul> 
+      
+
+	   
+        <div class="search-box pull-right">
+		  <form action="./search.php?sid=f2965996ad766597b225a992d0a990b8" method="get" id="search" role="search">
+		   <fieldset>
+		   <input name="keywords" id="keywords" maxlength="128" title="Search for keywords" placeholder="Search" type="text">
+		   <input name="sid" value="f2965996ad766597b225a992d0a990b8" type="hidden">
+
+		   </fieldset> 
+          </form> 
+        </div> 
+	    	
+		</div>
+    </section> 
+<!-- Subheader block --><!-- Lower Breadcrumb block -->
+		<div class="sub-breadcrumb">
+            <span class="time pull-left">It is currently Sun Aug 20, 2017 7:14 pm</span> 
+            
+        </div>
+<!-- Lower Breadcrumb block --> 
+	
+	<div id="page-body">
+	 <main role="main">
+
+	
+
+
+
+<div class="side-segment"><h3><a href="https://forum.newae.com/viewtopic.php?f=9&amp;t=362&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title="">RHME3 - MATLAB File Format Converter</a></h3></div>
+
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Discussions of performing power analysis, techniques, implementations, etc. Does not need to use ChipWhisperer.<br></div>
+
+
+
+<div class="clearfix">
+
+<div class="pull-right">
+
+     <ul class="pagination pagination-sm hidden-xs">
+
+     
+
+       <li class="active"><a data-original-title="" title="">4 posts</a></li>
+
+	   <li><a data-original-title="" title="">Page <strong>1</strong> of <strong>1</strong></a></li>
+
+     </ul>
+
+	
+
+	<div class="visible-xs"> 
+
+     <ul class="pagination pagination-sm">
+
+	 
+
+	  <li class="active"><a data-original-title="" title="">4 posts</a></li>
+
+	 
+
+	</ul>
+
+	</div>
+
+</div>
+
+
+
+
+
+	
+
+	<form class="form-horizontal hidden-xs hidden-sm" method="get" id="topic-search" action="./search.php?sid=f2965996ad766597b225a992d0a990b8">
+
+	 <fieldset class="form-group col-md-3">
+
+	<div class="input-group input-group-sm input-icon left">
+
+	  <i class="fa fa-search"></i>
+
+      <input class="form-control" size="15" name="keywords" id="search_keywords" value="Search this topic…" placeholder="Search this topic…" type="text">
+
+      <div class="input-group-btn">
+
+	     <a href="https://forum.newae.com/search.php?sid=f2965996ad766597b225a992d0a990b8" class="btn btn-default" title="" data-original-title="Advanced search"><span class="fa fa-cog"></span></a>
+
+        <button class="btn btn-default" type="submit" value="Search">Search</button>
+
+	  </div>
+
+    </div>
+
+	 <input name="t" value="362" type="hidden">
+<input name="sf" value="msgonly" type="hidden">
+<input name="sid" value="f2965996ad766597b225a992d0a990b8" type="hidden">
+
+
+	</fieldset>
+
+    </form>
+
+	
+
+	<form class="form-horizontal hidden-xs visible-sm" method="get" id="topic-search" action="./search.php?sid=f2965996ad766597b225a992d0a990b8">
+
+	 <fieldset class="form-group col-sm-4">
+
+    <div class="input-group input-group-sm">  
+
+	  <input class="form-control" size="cols-sm-3" name="keywords" id="search_keywords" placeholder="Search this topic…" type="text">
+
+	  <div class="input-group-btn">
+
+		<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+
+     </div>
+
+   </div>
+
+    <input name="t" value="362" type="hidden">
+<input name="sf" value="msgonly" type="hidden">
+<input name="sid" value="f2965996ad766597b225a992d0a990b8" type="hidden">
+
+
+	</fieldset>
+
+    </form>
+
+   
+
+   <div class="visible-xs pull-left">   
+
+	  <a href="https://forum.newae.com/search.php?sid=f2965996ad766597b225a992d0a990b8" class="btn btn-sm btn-default" title="" role="button" data-original-title="Advanced search"><i class="fa fa-search"></i> Search</a>
+
+   </div>
+
+	
+
+</div>
+
+
+
+<div class="clearfix">
+
+   <div class="pull-right">
+
+        <div class="btn-group">
+
+   			<a class="btn btn-default" href="https://forum.newae.com/viewtopic.php?f=9&amp;t=362&amp;sid=f2965996ad766597b225a992d0a990b8&amp;view=print" title="" accesskey="p" data-original-title="Print view"><i class="fa fa-print"></i></a>
+
+        </div>
+
+ 
+
+		<div class="btn-group">
+
+			
+
+		</div>
+
+	
+
+   </div>
+
+   
+
+    <div class="pull-left">
+
+   	
+
+	<a class="btn btn-default" href="https://forum.newae.com/posting.php?mode=reply&amp;f=9&amp;t=362&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="Post a reply" role="button"><i class="fa fa-plus"></i> Reply</a>
+
+    
+
+   </div>
+
+</div>
+
+
+
+<div class="space10"></div>
+
+
+
+
+
+<div id="p1489" class="clearfix ">	
+
+ <article role="article">
+
+  <div class="well well-sm ">
+
+   
+
+	<div class="postbody col-md-9 col-sm-8">
+
+	 <div class="row">
+
+			
+
+			
+
+    <div class="clearfix">
+
+	
+
+		
+
+		<div class="pull-left">
+
+		   <h3><a href="#p1489" data-original-title="" title="">RHME3 - MATLAB File Format Converter</a></h3>
+
+		</div>
+
+	</div>
+
+		
+
+	<div class="clearfix">
+
+        <div class="pull-left timepost">
+
+		<i class="fa fa-bookmark"></i> <a href="https://forum.newae.com/viewtopic.php?p=1489&amp;sid=f2965996ad766597b225a992d0a990b8#p1489" title="" data-original-title="Post">#1489</a> <i class="fa fa-user"></i> by <strong><a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=2&amp;sid=f2965996ad766597b225a992d0a990b8" style="color: #AA0000;" class="username-coloured" data-original-title="" title="">coflynn</a></strong> 
+
+		<br><i class="fa fa-clock-o"></i> Mon Aug 07, 2017 11:48 am 
+
+		</div>
+
+	</div>
+
+	
+
+	<div class="space10"></div>
+
+
+
+			
+
+
+
+			<div class="content">For anyone playing with RHME3, I thought I'd post some file conversion hints.<br><br>The
+ default .mat file don't load in scipy.io it seems, so the example 
+conversion utilities on the wiki are no good. A quick-n-dirty method of 
+fixing this is to:<br><br><ol style="list-style-type: decimal"><li>Split
+ the .mat file (it's text, open it in a text editor) into two 
+text-files. The first contains the list of data (AFTER the header of 
+'300 32') which can be loaded by numpy. The second file contains the 
+other block of data which is in a slightly different format.</li><li>Run the below script. It will create a directory 'rhme3'.</li><li>Open
+ ChipWhisperer analyzer, open the "Trace Manager", and then hit "Add 
+Trace" (the + button). Point it at the generated .cfg file.</li></ol><br><div class="codebox"><span>Code: <a href="#" onclick="selectCode(this); return false;" data-original-title="" title="">Select all</a></span><code>import numpy as np<br>import ctypes<br>import os<br>from chipwhisperer.common.traces.TraceContainerNative import TraceContainerNative<br><br>ntraces = 300<br><br>inout = np.loadtxt('inout.txt')<br>traces = np.loadtxt('traces.txt')<br>inout = np.reshape(inout, (32, ntraces))<br>inout = inout.T<br><br>inp = np.uint8(inout[:, 0:16])<br>out = np.uint8(inout[:, 16:32])<br><br>#If you'd like to plot a trace to see it<br>from matplotlib.pylab import *<br>#plot(traces[0,:], 'r')<br>#plot(traces[1,:], 'b')<br>#show()<br><br>#Save as ChipWhisperer project<br>tc = TraceContainerNative()<br>for i in range(0, ntraces):<br>&nbsp; &nbsp; tc.addWave(traces[i])<br>&nbsp; &nbsp; tc.addTextin(inp[i])<br>&nbsp; &nbsp; tc.addTextout(out[i])<br><br>&nbsp; &nbsp; #Temp - add fake key info. Required on Linux possibly, will be fixed to avoid this. Be sure to turn<br>&nbsp; &nbsp; #highlight key off to avoid being confused.<br>&nbsp; &nbsp; tc.addKey([0]*16)<br><br>os.mkdir('rhme3')<br>tc.saveAllTraces('rhme3')<br>tc.config.setConfigFilename(r'rhme3\rhme.cfg')<br>tc.config.saveTrace()<br></code></div><br><br>EDIT: There is a short hack needed for now - open the .cfg file generated, and change the line:<br><div class="codebox"><span>Code: <a href="#" onclick="selectCode(this); return false;" data-original-title="" title="">Select all</a></span><code>prefix = None<br></code></div><br>to:<br><div class="codebox"><span>Code: <a href="#" onclick="selectCode(this); return false;" data-original-title="" title="">Select all</a></span><code>prefix = <br></code></div>.<br>The
+ first line worked OK on Windows, but the Linux version failed. The real
+ fix is a code patch but that work-around is good for now (or you can 
+set a prefix as well solves the problem).</div>
+
+
+
+			
+
+	 </div>
+
+    </div>
+
+	
+
+	
+
+ <div class="col-md-3 col-sm-4 hidden-xs" id="profile1489">
+
+   <div class="user-profile-tab">
+
+	<div class="user-profile-avatar">
+
+		<div class="avatar-frame">
+
+		<a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=2&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><img src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/file.jpeg" alt="User avatar" width="80" height="63"></a>
+
+		</div>
+
+	    
+
+	</div>
+
+
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Username</div>
+
+				    <div class="user-profile-output">
+
+						 <a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=2&amp;sid=f2965996ad766597b225a992d0a990b8" style="color: #AA0000;" class="username-coloured" data-original-title="" title="">coflynn</a>
+
+					</div>
+
+				</div>
+
+				
+
+				
+
+				
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Rank</div>
+
+				    <div class="user-profile-output">
+
+						Site Admin
+
+					</div>
+
+				</div>
+
+				
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Posts</div>
+
+				    <div class="user-profile-output">
+
+						396
+
+					</div>
+
+				</div>
+
+				
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Joined</div>
+
+				    <div class="user-profile-output">
+
+						Wed Aug 27, 2014 9:15 am
+
+					</div>
+
+				</div>
+
+                
+
+				
+
+	</div>	
+
+ </div>
+
+	
+
+
+
+    <div class="space10"></div>  
+
+     
+
+  </div>
+
+ </article>
+
+</div>
+
+
+
+
+
+<div id="p1490" class="clearfix ">	
+
+ <article role="article">
+
+  <div class="well well-sm ">
+
+   
+
+	<div class="postbody col-md-9 col-sm-8">
+
+	 <div class="row">
+
+			
+
+			
+
+    <div class="clearfix">
+
+	
+
+		
+
+		<div class="pull-left">
+
+		   <h3><a href="#p1490" data-original-title="" title="">Re: RHME3 - MATLAB File Format Converter</a></h3>
+
+		</div>
+
+	</div>
+
+		
+
+	<div class="clearfix">
+
+        <div class="pull-left timepost">
+
+		<i class="fa fa-bookmark"></i> <a href="https://forum.newae.com/viewtopic.php?p=1490&amp;sid=f2965996ad766597b225a992d0a990b8#p1490" title="" data-original-title="Post">#1490</a> <i class="fa fa-user"></i> by <strong><a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=2&amp;sid=f2965996ad766597b225a992d0a990b8" style="color: #AA0000;" class="username-coloured" data-original-title="" title="">coflynn</a></strong> 
+
+		<br><i class="fa fa-clock-o"></i> Mon Aug 07, 2017 12:20 pm 
+
+		</div>
+
+	</div>
+
+	
+
+	<div class="space10"></div>
+
+
+
+			
+
+
+
+			<div class="content">To actually recover the key, one may need to use
+ features like SAD alignment, as you may notice the traces are slightly 
+out of alignment if you plot several of them (i.e., 0-20).</div>
+
+
+
+			
+
+	 </div>
+
+    </div>
+
+	
+
+	
+
+ <div class="col-md-3 col-sm-4 hidden-xs" id="profile1490">
+
+   <div class="user-profile-tab">
+
+	<div class="user-profile-avatar">
+
+		<div class="avatar-frame">
+
+		<a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=2&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><img src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/file.jpeg" alt="User avatar" width="80" height="63"></a>
+
+		</div>
+
+	    
+
+	</div>
+
+
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Username</div>
+
+				    <div class="user-profile-output">
+
+						 <a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=2&amp;sid=f2965996ad766597b225a992d0a990b8" style="color: #AA0000;" class="username-coloured" data-original-title="" title="">coflynn</a>
+
+					</div>
+
+				</div>
+
+				
+
+				
+
+				
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Rank</div>
+
+				    <div class="user-profile-output">
+
+						Site Admin
+
+					</div>
+
+				</div>
+
+				
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Posts</div>
+
+				    <div class="user-profile-output">
+
+						396
+
+					</div>
+
+				</div>
+
+				
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Joined</div>
+
+				    <div class="user-profile-output">
+
+						Wed Aug 27, 2014 9:15 am
+
+					</div>
+
+				</div>
+
+                
+
+				
+
+	</div>	
+
+ </div>
+
+	
+
+
+
+    <div class="space10"></div>  
+
+     
+
+  </div>
+
+ </article>
+
+</div>
+
+
+
+
+
+<div id="p1498" class="clearfix ">	
+
+ <article role="article">
+
+  <div class="well well-sm ">
+
+   
+
+	<div class="postbody col-md-9 col-sm-8">
+
+	 <div class="row">
+
+			
+
+			
+
+    <div class="clearfix">
+
+	
+
+		
+
+		<div class="pull-left">
+
+		   <h3><a href="#p1498" data-original-title="" title="">Re: RHME3 - MATLAB File Format Converter</a></h3>
+
+		</div>
+
+	</div>
+
+		
+
+	<div class="clearfix">
+
+        <div class="pull-left timepost">
+
+		<i class="fa fa-bookmark"></i> <a href="https://forum.newae.com/viewtopic.php?p=1498&amp;sid=f2965996ad766597b225a992d0a990b8#p1498" title="" data-original-title="Post">#1498</a> <i class="fa fa-user"></i> by <strong><a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=598&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title="">abhi</a></strong> 
+
+		<br><i class="fa fa-clock-o"></i> Sun Aug 13, 2017 11:09 am 
+
+		</div>
+
+	</div>
+
+	
+
+	<div class="space10"></div>
+
+
+
+			
+
+
+
+			<div class="content">Hi Colin,<br><br>I'm using the latest chipwisperer analyser  from github develop branch (tried the pip one too). <br>It is working really good until I turn on SAD resync. <br>When I start the attack, getting the following error after a few seconds<br><br><div class="codebox"><span>Code: <a href="#" onclick="selectCode(this); return false;" data-original-title="" title="">Select all</a></span><code>Could not execute method run in script class UserScript: 'IndexError: too many indices for array:too many indices for array'<br></code></div><br><br>line number 56 [inside function oneSubkey] variable <span style="font-weight: bold">traces_all</span> expected to be a multidimensional array [it is,  if you disable SAD] but which is coming as a single dimensional array.<br><br>When I do <span style="font-weight: bold">print traces_all.shape</span> in the the code, it is printing <span style="font-weight: bold">(10,)</span> with SAD enabled, <span style="font-weight: bold">(10, 6095)</span> with SAD disabled<br><br>In chipwhisperer/analyzer/attacks/cpa_algorithms/progressive.py<br><div class="codebox"><span>Code: <a href="#" onclick="selectCode(this); return false;" data-original-title="" title="">Select all</a></span><code>&nbsp; &nbsp;<br>def oneSubkey(self, bnum, pointRange, traces_all, numtraces, plaintexts, ciphertexts, knownkeys, progressBar, state, pbcnt):<br>&nbsp; &nbsp; &nbsp; &nbsp; diffs = [0] * self.model.getPermPerSubkey()<br>&nbsp; &nbsp; &nbsp; &nbsp; self.totalTraces += numtraces<br><br>&nbsp; &nbsp; &nbsp; &nbsp; if pointRange == None:<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; traces = traces_all<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # padbefore = 0<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # padafter = 0<br>&nbsp; &nbsp; &nbsp; &nbsp; else:<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try:<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print traces_all.shape<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; except:<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; traces = traces_all[:, pointRange[0] : pointRange[1]] # Exception here<br></code></div><br><br>Is that a bug, or am I missing something?<br><br>Thanks</div>
+
+
+
+			
+
+	 </div>
+
+    </div>
+
+	
+
+	
+
+ <div class="col-md-3 col-sm-4 hidden-xs" id="profile1498">
+
+   <div class="user-profile-tab">
+
+	<div class="user-profile-avatar">
+
+		<div class="avatar-frame">
+
+		
+
+		</div>
+
+	    
+
+	</div>
+
+
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Username</div>
+
+				    <div class="user-profile-output">
+
+						 <a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=598&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title="">abhi</a>
+
+					</div>
+
+				</div>
+
+				
+
+				
+
+				
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Posts</div>
+
+				    <div class="user-profile-output">
+
+						1
+
+					</div>
+
+				</div>
+
+				
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Joined</div>
+
+				    <div class="user-profile-output">
+
+						Sat Aug 12, 2017 1:02 pm
+
+					</div>
+
+				</div>
+
+                
+
+				
+
+	</div>	
+
+ </div>
+
+	
+
+
+
+    <div class="space10"></div>  
+
+     
+
+  </div>
+
+ </article>
+
+</div>
+
+
+
+
+
+<div id="p1506" class="clearfix ">	
+
+ <article role="article">
+
+  <div class="well well-sm ">
+
+   
+
+	<div class="postbody col-md-9 col-sm-8">
+
+	 <div class="row">
+
+			
+
+			
+
+    <div class="clearfix">
+
+	
+
+		
+
+		<div class="pull-left">
+
+		   <h3><a href="#p1506" data-original-title="" title="">Re: RHME3 - MATLAB File Format Converter</a></h3>
+
+		</div>
+
+	</div>
+
+		
+
+	<div class="clearfix">
+
+        <div class="pull-left timepost">
+
+		<i class="fa fa-bookmark"></i> <a href="https://forum.newae.com/viewtopic.php?p=1506&amp;sid=f2965996ad766597b225a992d0a990b8#p1506" title="" data-original-title="Post">#1506</a> <i class="fa fa-user"></i> by <strong><a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=2&amp;sid=f2965996ad766597b225a992d0a990b8" style="color: #AA0000;" class="username-coloured" data-original-title="" title="">coflynn</a></strong> 
+
+		<br><i class="fa fa-clock-o"></i> Mon Aug 14, 2017 2:14 pm 
+
+		</div>
+
+	</div>
+
+	
+
+	<div class="space10"></div>
+
+
+
+			
+
+
+
+			<div class="content">Hello,<br><br>This sounds like it might be an invalid input range? Can you post your capture script (or just the proprocessing setup part).<br><br>When it fails to find matches it may do funky things. <br><br>Do the traces look OK without the preprocessing enabled?<br><br>  -Colin</div>
+
+
+
+			
+
+	 </div>
+
+    </div>
+
+	
+
+	
+
+ <div class="col-md-3 col-sm-4 hidden-xs" id="profile1506">
+
+   <div class="user-profile-tab">
+
+	<div class="user-profile-avatar">
+
+		<div class="avatar-frame">
+
+		<a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=2&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><img src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/file.jpeg" alt="User avatar" width="80" height="63"></a>
+
+		</div>
+
+	    
+
+	</div>
+
+
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Username</div>
+
+				    <div class="user-profile-output">
+
+						 <a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=2&amp;sid=f2965996ad766597b225a992d0a990b8" style="color: #AA0000;" class="username-coloured" data-original-title="" title="">coflynn</a>
+
+					</div>
+
+				</div>
+
+				
+
+				
+
+				
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Rank</div>
+
+				    <div class="user-profile-output">
+
+						Site Admin
+
+					</div>
+
+				</div>
+
+				
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Posts</div>
+
+				    <div class="user-profile-output">
+
+						396
+
+					</div>
+
+				</div>
+
+				
+
+				<div class="user-profile-row">
+
+					    <div class="user-profile-tag">Joined</div>
+
+				    <div class="user-profile-output">
+
+						Wed Aug 27, 2014 9:15 am
+
+					</div>
+
+				</div>
+
+                
+
+				
+
+	</div>	
+
+ </div>
+
+	
+
+
+
+    <div class="space10"></div>  
+
+     
+
+  </div>
+
+ </article>
+
+</div>
+
+
+
+
+
+
+
+<div class="clearfix">
+
+	<div class="pull-left">
+
+   	
+
+	<a class="btn btn-default" href="https://forum.newae.com/posting.php?mode=reply&amp;f=9&amp;t=362&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="Post a reply" role="button"><i class="fa fa-plus"></i> Reply</a>
+
+    
+
+   </div>
+
+
+
+   <div class="pull-right">
+
+     <ul class="pagination pagination-sm hidden-xs">
+
+	 <li><a title="" data-original-title="" href="javascript:void(0);" data-target=".sorting" data-toggle="collapse">Options</a></li>
+
+       <li class="active"><a data-original-title="" title="">4 posts</a></li>
+
+	   <li><a data-original-title="" title="">Page <strong>1</strong> of <strong>1</strong></a></li>
+
+     </ul>
+
+	<div class="visible-xs"> 
+
+     <ul class="pagination pagination-sm">
+
+	 
+
+	  <li class="active"><a data-original-title="" title="">4 posts</a></li>
+
+	   <li><a data-original-title="" title="">Page <strong>1</strong> of <strong>1</strong></a></li>
+
+	</ul>
+
+	</div>
+
+   </div>
+
+</div>
+
+
+
+<div class="space10"></div>
+
+
+
+<div class="row">
+
+
+
+<div class="col-md-3 col-sm-6 pull-left">
+
+<form role="form" method="post" id="jumpbox" action="./viewforum.php?sid=f2965996ad766597b225a992d0a990b8" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+
+	<fieldset>
+
+	
+
+	  <label for="f" accesskey="j">Jump to:</label>
+
+		<div class="input-group input-group-sm">
+
+			<select class="selectpicker" data-style="btn btn-default form-control" data-width="auto" data-container="body" name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }" style="display: none;" data-original-title="" title="">
+
+			
+
+				<option value="-1">Select a forum</option>
+
+			<option value="-1">------------------</option>
+
+				<option value="4">Embedded Security</option>
+
+			
+
+				<option value="6">&nbsp; &nbsp;ChipWhisperer Hardware</option>
+
+			
+
+				<option value="7">&nbsp; &nbsp;ChipWhisperer Software</option>
+
+			
+
+				<option value="9" selected="selected">&nbsp; &nbsp;Side Channel Power Analysis</option>
+
+			
+
+				<option value="8">&nbsp; &nbsp;Example Traces</option>
+
+			
+
+				<option value="10">&nbsp; &nbsp;Glitching</option>
+
+			
+
+				<option value="12">&nbsp; &nbsp;Capture The Flag (CTF)</option>
+
+			
+
+				<option value="3">Other Products</option>
+
+			
+
+				<option value="5">&nbsp; &nbsp;OpenADC</option>
+
+			
+
+				<option value="11">&nbsp; &nbsp;Other Products</option>
+
+			
+
+			</select><div class="btn-group bootstrap-select input-group-btn" style="width: 218px;"><button type="button" class="dropdown-toggle selectpicker btn btn-default form-control" data-toggle="dropdown" data-id="f" title="" data-original-title="&amp;nbsp; &amp;nbsp;Side Channel Power Analysis"><span class="filter-option pull-left">&nbsp; &nbsp;Side Channel Power Analysis</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open" style="min-width: 0px;"><ul class="dropdown-menu inner selectpicker" role="menu" data-original-title="" title=""><li rel="0"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">Select a forum</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">------------------</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">Embedded Security</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">&nbsp; &nbsp;ChipWhisperer Hardware</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="4"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">&nbsp; &nbsp;ChipWhisperer Software</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="5" class="selected"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">&nbsp; &nbsp;Side Channel Power Analysis</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="6"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">&nbsp; &nbsp;Example Traces</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="7"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">&nbsp; &nbsp;Glitching</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="8"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">&nbsp; &nbsp;Capture The Flag (CTF)</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="9"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">Other Products</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="10"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">&nbsp; &nbsp;OpenADC</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="11"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">&nbsp; &nbsp;Other Products</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li></ul></div></div>
+
+		<span class="input-group-btn">
+
+			<button type="submit" class="btn btn-default">Go</button>
+
+		</span>
+
+		</div>
+
+	</fieldset>
+
+</form>
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="space10"></div>
+
+<div class="pull-left">
+
+	<a href="https://forum.newae.com/viewforum.php?f=9&amp;sid=f2965996ad766597b225a992d0a990b8" accesskey="r" data-original-title="" title="">Return to Side Channel Power Analysis</a>
+
+</div>
+
+<div class="space10"></div>
+
+
+
+
+
+<div class="hidden-xs">
+
+
+
+<form class="form-horizontal" method="post" action="./viewtopic.php?f=9&amp;t=362&amp;sid=f2965996ad766597b225a992d0a990b8">
+
+	<fieldset class="controls-row">
+
+                    <div class="sorting collapse">
+
+					 <div class="panel panel-default">
+
+					  <div class="panel-body">
+
+                        <div class="col-md-12 col-sm-12">
+
+					
+
+						<div class="col-md-4 col-sm-4"> 
+
+                         <label for="bday_day">Display:</label>
+
+                            <div class="control-row">
+
+                              <select class="selectpicker" data-width="120px" data-container="body" name="st" id="st" style="display: none;" data-original-title="" title=""><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select><div class="btn-group bootstrap-select" style="width: 120px;"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" data-id="st" title="" data-original-title="All posts"><span class="filter-option pull-left">All posts</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu" data-original-title="" title=""><li rel="0" class="selected"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">All posts</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">1 day</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">7 days</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">2 weeks</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="4"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">1 month</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="5"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">3 months</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="6"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">6 months</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="7"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">1 year</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li></ul></div></div>
+
+                            </div>
+
+						</div>
+
+	 
+
+	                    <div class="col-md-4 col-sm-4"> 
+
+                          <label for="bday_day">Sort by </label>
+
+                            <div class="control-row">
+
+                              <select class="selectpicker" data-width="120px" data-container="body" name="sk" id="sk" style="display: none;" data-original-title="" title=""><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select><div class="btn-group bootstrap-select" style="width: 120px;"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" data-id="sk" title="" data-original-title="Post time"><span class="filter-option pull-left">Post time</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu" data-original-title="" title=""><li rel="0"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">Author</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="1" class="selected"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">Post time</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">Subject</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li></ul></div></div>
+
+                            </div>
+
+						</div>
+
+											
+
+						<div class="col-md-4 col-sm-4"> 
+
+                           <label for="bday_day">Sort by</label>
+
+                            <div class="control-row">
+
+							<div class="input-group">
+
+                             <select class="selectpicker" data-width="120px" data-container="body" name="sd" id="sd" style="display: none;" data-original-title="" title=""><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select><div class="btn-group bootstrap-select input-group-btn" style="width: 120px;"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" data-id="sd" title="" data-original-title="Ascending"><span class="filter-option pull-left">Ascending</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu" data-original-title="" title=""><li rel="0" class="selected"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">Ascending</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style="" data-original-title="" title=""><span class="text">Descending</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li></ul></div></div>
+
+							 <span class="input-group-btn">
+
+                              <button class="btn btn-default" name="sort" type="submit">Go</button>
+
+							</span>
+
+							</div>
+
+						    </div>   
+
+						</div>
+
+	                
+
+                        </div>
+
+                      </div>
+
+					 </div>
+
+					</div>
+
+            <!-- // Widget --> 
+
+	</fieldset> 
+
+</form>
+
+
+
+</div>
+
+	
+
+	
+
+
+
+
+
+<div class="side-segment">
+
+	<h3>Who is online</h3>
+
+</div> 
+
+	<p><small>Users browsing this forum: No registered users and 1 guest</small></p>
+
+<footer role="contentinfo"> <!-- Footer block -->
+		<div id="footerContent"> <!-- About us , links, twitter, recent posts layout -->
+			<div class="row">
+				<div class="col-md-3 col-sm-6 recent-row">
+					<div class="side-segment"><h3>Recent Topics</h3></div>
+
+
+<div class="recent-topic text-overflow">
+
+	<a href="#" class="blogImage" data-original-title="" title=""><img src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/no-avatar-ff.png" alt="Default Avatar" width="50" height="50"></a>
+
+	
+
+	<a href="https://forum.newae.com/viewtopic.php?f=10&amp;p=1524&amp;sid=f2965996ad766597b225a992d0a990b8#p1524" title="" data-original-title=" rising edge not always detected during A2 tutorial glitch"><i class="fa fa-mail-forward text-muted"></i>  rising edge not always detected during A2 tutorial glitch</a>
+
+	<p><i class="fa fa-user"></i> by: <a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=604&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title="">skxo</a></p>
+
+	<p><i class="fa fa-clock-o"></i> Sun Aug 20, 2017 6:00 pm</p>
+
+	 
+
+</div>
+
+
+
+<div class="recent-topic text-overflow">
+
+	<a href="#" class="blogImage" data-original-title="" title=""><img src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/no-avatar-ff.png" alt="Default Avatar" width="50" height="50"></a>
+
+	
+
+	<a href="https://forum.newae.com/viewtopic.php?f=7&amp;p=1523&amp;sid=f2965996ad766597b225a992d0a990b8#p1523" title="" data-original-title=" Open ADC Error when installing Chip Whisperer."><i class="fa fa-mail-forward text-muted"></i>  Open ADC Error when installing Chip Whisperer.</a>
+
+	<p><i class="fa fa-user"></i> by: <a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=591&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title="">Why123</a></p>
+
+	<p><i class="fa fa-clock-o"></i> Fri Aug 18, 2017 11:28 pm</p>
+
+	 
+
+</div>
+
+
+
+<div class="recent-topic text-overflow">
+
+	<a href="#" class="blogImage" data-original-title="" title=""><img src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/no-avatar-ff.png" alt="Default Avatar" width="50" height="50"></a>
+
+	
+
+	<a href="https://forum.newae.com/viewtopic.php?f=7&amp;p=1522&amp;sid=f2965996ad766597b225a992d0a990b8#p1522" title="" data-original-title=" Chipwhisperer setup Agilent MSO8064  with Sakura-GW board"><i class="fa fa-mail-forward text-muted"></i>  Chipwhisperer setup Agilent MSO8064  with Sakura-GW board</a>
+
+	<p><i class="fa fa-user"></i> by: <a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=597&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title="">Bahar</a></p>
+
+	<p><i class="fa fa-clock-o"></i> Fri Aug 18, 2017 2:53 am</p>
+
+	 
+
+</div>
+
+
+
+<div class="recent-topic text-overflow">
+
+	<a href="#" class="blogImage" data-original-title="" title=""><img src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/no-avatar-ff.png" alt="Default Avatar" width="50" height="50"></a>
+
+	
+
+	<a href="https://forum.newae.com/viewtopic.php?f=7&amp;p=1520&amp;sid=f2965996ad766597b225a992d0a990b8#p1520" title="" data-original-title=" Open Monitor Error"><i class="fa fa-mail-forward text-muted"></i>  Open Monitor Error</a>
+
+	<p><i class="fa fa-user"></i> by: <a href="https://forum.newae.com/memberlist.php?mode=viewprofile&amp;u=597&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title="">Bahar</a></p>
+
+	<p><i class="fa fa-clock-o"></i> Fri Aug 18, 2017 1:01 am</p>
+
+	 
+
+</div>
+
+
+				</div>
+				
+				<div class="col-md-3 col-sm-6 recent-row">
+					<div class="side-segment"><h3>Twitter</h3></div>
+				   <div id="example1"></div>
+				</div>
+				
+				<div class="col-md-3 col-sm-6 recent-row">
+					<div class="side-segment"><h3>Favorites</h3></div>
+					<ul class="navList">
+						<li><a href="#" data-original-title="" title=""><i class="fa fa-home"></i> Home</a></li>
+						<li><a href="#" data-original-title="" title=""><i class="fa fa-picture-o"></i> Gallery</a></li>
+						<li><a href="https://forum.newae.com/memberlist.php?sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><i class="fa fa-group"></i> Members</a></li>
+						<li><a href="#" data-original-title="" title=""><i class="fa fa-comments"></i> Chat</a></li>
+						<li><a href="#" data-original-title="" title=""><i class="fa fa-bar-chart-o"></i> Statistics</a></li>
+						<li><a href="https://forum.newae.com/ucp.php?mode=delete_cookies&amp;sid=f2965996ad766597b225a992d0a990b8" data-original-title="" title=""><i class="fa fa-trash-o"></i> Delete all board cookies</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-md-3 col-sm-6 recent-row">
+				   <div class="side-segment"><h3>About Us</h3></div>
+					<p>NewAE Technology Inc™ provides this forum for customer discussion and support, along with general embedded security discussion.</p> 
+					<p>This forum is also the official discussion place for the 
+open-source ChipWhisperer® project, including homemade and other 
+hardware.</p>
+				   <blockquote>
+                    <p><span>New</span>AE</p>
+                     <small><cite title="Source Title"> <i class="fa fa-map-marker"></i></cite></small>
+                   </blockquote>
+				</div>
+				
+			</div>
+		</div> <!-- About us , links, twitter, recent posts layout -->
+		
+	<div class="row bottomLinks"> <!-- Credit, links and copyright block do not remove please -->
+	  <div class="col-md-12">
+		<div class="pull-left">
+		  <small>Powered By <a href="http://www.phpbb.com/" title="" target="_blank" data-original-title="Forum Software © phpBB® Group"><i aria-hidden="true" class="icon-moon-forphp"></i></a> <i aria-hidden="true" class="icon-moon-bootstrap"></i> <i aria-hidden="true" class="icon-moon-html5"></i> <i aria-hidden="true" class="icon-moon-css3"></i> <i aria-hidden="true" class="icon-moon-forjq"></i> <i aria-hidden="true" class="icon-moon-less_c"></i> <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fsitesplat.com%2Fdemo%2FphpBB3%2Findex.php" title="" target="_blank" data-original-title="Conform to W3C HTML5 Standard"> <i aria-hidden="true" class="icon-moon-w3c"></i></a> </small>
+		</div>
+		
+		<div class="pull-right">
+		  <small>HandCrafted With&nbsp;<i class="fa fa-heart rosso"></i> and <i class="fa fa-coffee"></i> by: <a href="http://www.sitesplat.com/" title="" target="_blank" data-original-title="SiteSplat.com">SiteSplat</a> ©SiteSplat 2013</small>
+		</div>
+	   </div> 
+	</div> <!-- Credit, links and copyright block do not remove please -->
+</footer>
+	
+	  </main>
+	</div><!-- page-body id in header -->
+  </div> <!-- padding_0_40 in header -->
+ </div> <!-- content-forum in header -->
+</div> <!-- wrap - corners container in header -->
+
+<a id="totop" class="topstyle" href="" onclick="return false;" style="display: none;" data-original-title="" title=""><i class="fa fa-chevron-up"></i></a>
+
+<div class="container">
+  <div class="copyright">
+	<small class="pull-left">
+		<!-- <a href="http://www.sitesplat.com/phpBB3/">BBOOTS</a> -->
+	</small>
+	<small class="pull-right">
+		All times are UTC - 5 hours 
+	</small>
+  </div>
+</div>
+
+<div class="space10"></div> 
+
+<div> 
+	<img src="NewAE%20Forum%20View%20topic%20-%20RHME3%20-%20MATLAB%20File%20Format%20Converter_files/cron.gif" alt="cron" width="1" height="1">
+</div> 
+
+<!-- injected via a module or an include -->
+<script>
+    // some function that depends on bootstrap and jquery
+	head.ready(function () {
+	   $('.footable').footable();$.fn.tooltip&&$('[rel="tooltip"]').tooltip();$(".selectpicker").selectpicker();$(".selectpicker, .mchat-ttp").tooltip("disable");$(".btn-group [title]").tooltip({container:"body"});twitterFetcher.fetch("504660720378589185","example1",3,true,false);var totop=$("#totop");totop.click(function(){$("html, body").stop(true,true).animate({scrollTop:0},500);return false});$(window).scroll(function(){if($(this).scrollTop()>600){totop.fadeIn()}else{totop.fadeOut()}});$("button[data-loading-text]").click(function(){var e=$(this);e.button("loading");setTimeout(function(){e.button("reset")},3e3)});jQuery(function(e){e("a").tooltip({html:true,container:"body"})});
+       $('.listen_click').on('click',function(){$('.target-status').toggleClass('fa fa-arrow-down fa fa-arrow-up');});
+	   $('.listen_menu').on('click',function(){$(this).toggleClass('fa fa-align-justify fa fa-list');});
+	});
+</script>
+<!-- Google Analytics: change UA-XXXXXXXX-X to be your site's ID. -->
+
+
+</body></html>

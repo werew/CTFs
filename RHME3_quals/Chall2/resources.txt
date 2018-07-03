@@ -1,0 +1,5 @@
+Introduction to Side-Channel Power Analysis (SCA, DPA):
+https://www.youtube.com/watch?v=OlX-p4AGhWs&t=431s
+
+ChipWhisperer:
+https://wiki.newae.com/Main_Page

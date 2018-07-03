@@ -1,0 +1,12 @@
+Primary - hard (2 solves, 474 pts)
+--------------------------------------------
+Sometimes it's nice to know whether numbers are prime...
+
+Hint: Maybe you don't need a full RCE? Are there any interesting addresses that
+influence control flow?
+
+Challenge running at primary.ctfcompetition.com:1337
+
+    primary.c
+    Makefile
+    primary 

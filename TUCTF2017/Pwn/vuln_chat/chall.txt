@@ -1,0 +1,11 @@
+vuln chat 50
+
+One of our informants goes by the handle djinn. He found some information while
+working undercover inside an organized crime ring. Although we've had trouble
+retrieving this information from him. He left us this chat client to talk with
+him. Let's see if he trusts you...
+
+nc vulnchat.tuctf.com 4141
+
+vuln-chat - md5: 5d081990e899864c9dc85b1cf255af6e
+

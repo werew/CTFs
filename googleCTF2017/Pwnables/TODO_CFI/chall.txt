@@ -1,0 +1,13 @@
+CFI - hard (5 solves, 420 pts)
+--------------------------------------------------------------------
+I'm not good at writing secure code, but luckily there's control-flow
+integrity. Run with MCFI_SDK=/path/to/toolchain ./cfi (powered by
+https://github.com/mcfi/MCFI)
+
+Note: if anyone has issues with the proof-of-work on cfi, ping tsuro_ on IRC
+
+Challenge running at cfi.ctfcompetition.com:1337
+
+    cfi.c
+    toolchain.tar.gz
+    cfi 

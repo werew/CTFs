@@ -1,0 +1,10 @@
+Guestbook 250
+
+Check it out, I've made a guestbook program. It's nothing special. There's
+certainly no secrets here so don't go poking around.
+
+nc guestbook.tuctf.com 4545
+
+guestbook - md5: f52eba75bb15459ff7d1798c7ad1d2d9
+libc.so.6 - md5: f71e966c590bfb1f53ea3410f8b489d4
+

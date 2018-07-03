@@ -1,0 +1,6 @@
+The username is "john galt".
+
+The password is stored as a string in the binary:
+
+$ strings funmail | grep pass 
+--> this-password-is-a-secret-to-everyone!

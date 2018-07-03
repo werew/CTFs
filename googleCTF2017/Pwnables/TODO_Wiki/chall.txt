@@ -1,0 +1,6 @@
+Wiki - medium (31 solves, 253 pts)
+-------------------------------------------------
+Go solve it already! 
+Challenge running at wiki.ctfcompetition.com:1337
+
+    - challenge 

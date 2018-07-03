@@ -1,0 +1,74 @@
+Future 250
+
+Future me gave me this and told me to add it to TUCTF. I dunno, he sounded
+crazy. Anyway, Let's see what's so special about it.  
+NOTE: If you find a solution that was not intended, then msg me on Discord @scrub
+
+future - md5: 30a6b3fe92a65271bac7c4b83b303b55
+
+HINT BELOW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HINT: The flag is in standard "TUCTF{l337_73x7}" format
+
+

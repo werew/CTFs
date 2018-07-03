@@ -1,0 +1,47 @@
+/******* My old strategies ****/
+1st hypothesis:
+AES-128 encrypt:
+ 
+-- some definitions --
+C1 = the ciphertext/state generated after the first round
+C9 = ciphertext/state from round 9
+C10 = ciphertext/state from round 10 (the actual final ciphertext)
+K10 = last round key
+ 
+if (last round @ 0x00463c8b ==> SubBytes + AddRoundKey): // FAILS :(
+    ShiftRow(SubBytes(C9)) ^ C10 = K10 --> we can obtain K0
+ 
+else if (last round @ 0x00463c8b ==> AddRoundKey): // FAILS :(
+    Even easier: just xor with the ciphertext before getting K10
+ 
+else if (last round @ 0x00463c8b ==> AddRoundKey + SubBytes + AddRoundKey):
+    Then the blob @ 0x0046373e (which is repeated 9 times)
+    does this ==> AddRoundKey + SubBytes + MixColumns
+    K0 = Inv_SubBytes(Inv_ShiftRow((Inv_MixColumns(C1))) ^ OriginalMessage
+ 
+ 
+2nd hypothesis:
+AES-128 decrypt
+
+
+/********* To recap *********/
+
+The first result you get when googling "whitebox unboxing" is a paper from
+riscure , this was my very first intro to whitebox crypto and DFA attacks. But,
+because I like to always try things on my own way before using someone else
+well-known approach, I first reversed the challenge and tried to recover the
+key manually. At that moment I knew the "idea" behind whitebox crypto but I
+didn't really know how it was implemented in practice, so after failing all my
+attempts I decided to get a deeper view on the topic by reading some papers,
+here is a nice one:
+https://www.cs.colorado.edu/~jrblack/class/csci7000/s03/project/oorschot-whitebox.pdf
+. This was a breakthrough and destroyed all my hopes to get the solution
+without using side channel attacks (in particular after I understood that some
+bijections are used in order to hide the output at different points, as for
+example after the MixColumns step). Therefore, I decided to use DFA: I made a
+gdb script to inject faults, used JeanGrey to get the last round key and from
+there I just had to reverse key schedule to get the flag...and I was done in a
+couple of hours. To recap: this chall gave me some hard time, but I attribute
+most of the frustration to my persistence in trying to get the key on my own
+way. If I would have started by reading some papers in order to better
+understand the implementation probably it would have been different.

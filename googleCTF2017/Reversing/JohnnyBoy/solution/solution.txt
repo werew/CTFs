@@ -1,0 +1,9 @@
+1) The file is in intel hex encoding,  convert it to binary:
+   objcopy -I ihex chall.ino.hex -O binary chall.bin
+2) Be lazy and don't start reversing but rather look for clues such as assets
+3) Images are monocromatics and encoded as 1bpp:
+https://community.arduboy.com/t/make-your-own-arduboy-game-part-6-graphics/2440
+4) First convert bits to bytes so that gimp will be able to read it (see convert.c):
+   gcc convert.c; ./a.out chall.bin > chall.data
+5) Extract the raw images using gimp: https://w00tsec.blogspot.nl/2015/02/extracting-raw-pictures-from-memory.html
+

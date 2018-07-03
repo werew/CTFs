@@ -1,0 +1,14 @@
+Solution step by step
+
+1. Understand white-box crypto and DFA (the folder papers contains a lot of good material)
+2. Try to get an idea of what the program is actually doing (what cipher is using?).
+   Some ways of doing it:
+    - Reverse the executable 
+    - Trace the execution (eg. function calls)
+    - Trace memory access
+   The program is using AES-128
+3. Inject faults before the last round and collect outputs (eg. using a gdb script)
+4. Use a tool such as JeanGrey to recover the last round key
+5. Recover the original key (flag) using the inverted key schedule algorithm
+
+flag: a1l_t4b135_R_oR5
