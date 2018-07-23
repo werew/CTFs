@@ -1,0 +1,451 @@
+jserror.c:	int n = J->tracetop - skip;
+jserror.c:		const char *name = J->trace[n].name;
+jserror.c:		const char *file = J->trace[n].file;
+jserror.c:		int line = J->trace[n].line;
+jserror.c:		if (n < J->tracetop - skip)
+jserror.c:		jsB_ErrorX(J, J->Name##_prototype); \
+jserror.c:		js_newerrorx(J, s, J->Name##_prototype); \
+jserror.c:		js_newerrorx(J, buf, J->Name##_prototype); \
+jserror.c:	js_pushobject(J, J->Error_prototype);
+jserror.c:		js_pushobject(J, J->NAME##_prototype); \
+Binary file .jsstate.c.swp matches
+jsdate.c:	obj = jsV_newobject(J, JS_CDATE, J->Date_prototype);
+jsdate.c:	J->Date_prototype->u.number = 0;
+jsdate.c:	js_pushobject(J, J->Date_prototype);
+Binary file .git/objects/pack/pack-f7b525d3b8d62ff4cebffbc0f1d20473e3785c48.pack matches
+json.c:	J->lookahead = jsY_lexjson(J);
+json.c:	if (J->lookahead == t) {
+json.c:				jsY_tokenstring(J->lookahead), jsY_tokenstring(t));
+json.c:	switch (J->lookahead) {
+json.c:		js_pushstring(J, J->text);
+json.c:		js_pushnumber(J, J->number);
+json.c:			if (J->lookahead != TK_STRING)
+json.c:				js_syntaxerror(J, "JSON: unexpected token: %s (expected string)", jsY_tokenstring(J->lookahead));
+json.c:			name = J->text;
+json.c:		js_syntaxerror(J, "JSON: unexpected token: %s", jsY_tokenstring(J->lookahead));
+json.c:	js_pushobject(J, jsV_newobject(J, JS_CJSON, J->Object_prototype));
+jsmath.c:	js_pushobject(J, jsV_newobject(J, JS_CMATH, J->Object_prototype));
+jsintern.c:	js_StringNode *root = J->strings;
+jsintern.c:	if (J->strings && J->strings != &jsS_sentinel)
+jsintern.c:		jsS_freestringnode(J, J->strings);
+jsintern.c:	if (!J->strings)
+jsintern.c:		J->strings = &jsS_sentinel;
+jsintern.c:	J->strings = jsS_insert(J, J->strings, s, &result);
+jsregexp.c:	obj = jsV_newobject(J, JS_CREGEXP, J->RegExp_prototype);
+jsregexp.c:	prog = js_regcompx(J->alloc, J->actx, pattern, opts, &error);
+jsregexp.c:	js_pushobject(J, J->RegExp_prototype);
+jsboolean.c:	J->Boolean_prototype->u.boolean = 0;
+jsboolean.c:	js_pushobject(J, J->Boolean_prototype);
+jsvalue.c:	if (J->strict)
+jsvalue.c:	js_Object *obj = jsV_newobject(J, JS_CBOOLEAN, J->Boolean_prototype);
+jsvalue.c:	js_Object *obj = jsV_newobject(J, JS_CNUMBER, J->Number_prototype);
+jsvalue.c:	js_Object *obj = jsV_newobject(J, JS_CSTRING, J->String_prototype);
+jsvalue.c:	js_pushobject(J, jsV_newobject(J, JS_COBJECT, J->Object_prototype));
+jsvalue.c:	js_pushobject(J, jsV_newobject(J, JS_CARRAY, J->Array_prototype));
+jsvalue.c:	js_Object *obj = jsV_newobject(J, JS_CFUNCTION, J->Function_prototype);
+jsvalue.c:	js_Object *obj = jsV_newobject(J, JS_CCFUNCTION, J->Function_prototype);
+jsvalue.c:	js_Object *obj = jsV_newobject(J, JS_CCFUNCTION, J->Function_prototype);
+jsfunction.c:	js_newfunction(J, fun, J->GE);
+jsfunction.c:	J->Function_prototype->u.c.name = "Function.prototype";
+jsfunction.c:	J->Function_prototype->u.c.function = jsB_Function_prototype;
+jsfunction.c:	J->Function_prototype->u.c.constructor = NULL;
+jsfunction.c:	J->Function_prototype->u.c.length = 0;
+jsfunction.c:	js_pushobject(J, J->Function_prototype);
+jsbuiltin.c:	J->Object_prototype = jsV_newobject(J, JS_COBJECT, NULL);
+jsbuiltin.c:	J->Array_prototype = jsV_newobject(J, JS_CARRAY, J->Object_prototype);
+jsbuiltin.c:	J->Function_prototype = jsV_newobject(J, JS_CCFUNCTION, J->Object_prototype);
+jsbuiltin.c:	J->Boolean_prototype = jsV_newobject(J, JS_CBOOLEAN, J->Object_prototype);
+jsbuiltin.c:	J->Number_prototype = jsV_newobject(J, JS_CNUMBER, J->Object_prototype);
+jsbuiltin.c:	J->String_prototype = jsV_newobject(J, JS_CSTRING, J->Object_prototype);
+jsbuiltin.c:	J->RegExp_prototype = jsV_newobject(J, JS_COBJECT, J->Object_prototype);
+jsbuiltin.c:	J->Date_prototype = jsV_newobject(J, JS_CDATE, J->Object_prototype);
+jsbuiltin.c:	J->Error_prototype = jsV_newobject(J, JS_CERROR, J->Object_prototype);
+jsbuiltin.c:	J->EvalError_prototype = jsV_newobject(J, JS_CERROR, J->Error_prototype);
+jsbuiltin.c:	J->RangeError_prototype = jsV_newobject(J, JS_CERROR, J->Error_prototype);
+jsbuiltin.c:	J->ReferenceError_prototype = jsV_newobject(J, JS_CERROR, J->Error_prototype);
+jsbuiltin.c:	J->SyntaxError_prototype = jsV_newobject(J, JS_CERROR, J->Error_prototype);
+jsbuiltin.c:	J->TypeError_prototype = jsV_newobject(J, JS_CERROR, J->Error_prototype);
+jsbuiltin.c:	J->URIError_prototype = jsV_newobject(J, JS_CERROR, J->Error_prototype);
+jsproperty.c:	obj->gcnext = J->gcobj;
+jsproperty.c:	J->gcobj = obj;
+jsproperty.c:	++J->gccounter;
+jsproperty.c:		if (J->strict && !result)
+Binary file .jsgc.c.swp matches
+jsdump.c:		if (v.u.object == J->G) {
+jsstate.c:	js_newscript(J, F, iseval ? (J->strict ? J->E : NULL) : J->GE);
+jsstate.c:	js_Panic old = J->panic;
+jsstate.c:	J->panic = panic;
+jsstate.c:	if (J->report)
+jsstate.c:		J->report(J, message);
+jsstate.c:	J->report = report;
+jsstate.c:	J->uctx = uctx;
+jsstate.c:	return J->uctx;
+jsstate.c:	J->actx = actx;
+jsstate.c:	J->alloc = alloc;
+jsstate.c:		J->strict = J->default_strict = 1;
+jsstate.c:	J->trace[0].name = "-top-";
+jsstate.c:	J->trace[0].file = "native";
+jsstate.c:	J->trace[0].line = 0;
+jsstate.c:	J->report = js_defaultreport;
+jsstate.c:	J->panic = js_defaultpanic;
+jsstate.c:	J->stack = alloc(actx, NULL, JS_STACKSIZE * sizeof *J->stack);
+jsstate.c:	if (!J->stack) {
+jsstate.c:	J->gcmark = 1;
+jsstate.c:	J->nextref = 0;
+jsstate.c:	J->R = jsV_newobject(J, JS_COBJECT, NULL);
+jsstate.c:	J->G = jsV_newobject(J, JS_COBJECT, NULL);
+jsstate.c:	J->E = jsR_newenvironment(J, J->G, NULL);
+jsstate.c:	J->GE = J->E;
+jsnumber.c:	J->Number_prototype->u.number = 0;
+jsnumber.c:	js_pushobject(J, J->Number_prototype);
+jsarray.c:	js_pushobject(J, J->Array_prototype);
+jsstring.c:	J->String_prototype->u.s.string = "";
+jsstring.c:	J->String_prototype->u.s.length = 0;
+jsstring.c:	js_pushobject(J, J->String_prototype);
+jsobject.c:	js_pushobject(J, J->Object_prototype);
+jsgc.c:		js_regfreex(J->alloc, J->actx, obj->u.r.prog);
+jsgc.c:	js_Value *v = J->stack;
+jsgc.c:	int n = J->top;
+jsgc.c:	mark = J->gcmark = J->gcmark == 1 ? 2 : 1;
+jsgc.c:	jsG_markobject(J, mark, J->Object_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->Array_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->Function_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->Boolean_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->Number_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->String_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->RegExp_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->Date_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->Error_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->EvalError_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->RangeError_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->ReferenceError_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->SyntaxError_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->TypeError_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->URIError_prototype);
+jsgc.c:	jsG_markobject(J, mark, J->R);
+jsgc.c:	jsG_markobject(J, mark, J->G);
+jsgc.c:	jsG_markenvironment(J, mark, J->E);
+jsgc.c:	jsG_markenvironment(J, mark, J->GE);
+jsgc.c:	for (i = 0; i < J->envtop; ++i)
+jsgc.c:		jsG_markenvironment(J, mark, J->envstack[i]);
+jsgc.c:	prevnextenv = &J->gcenv;
+jsgc.c:	for (env = J->gcenv; env; env = nextenv) {
+jsgc.c:	prevnextfun = &J->gcfun;
+jsgc.c:	for (fun = J->gcfun; fun; fun = nextfun) {
+jsgc.c:	prevnextobj = &J->gcobj;
+jsgc.c:	for (obj = J->gcobj; obj; obj = nextobj) {
+jsgc.c:	prevnextstr = &J->gcstr;
+jsgc.c:	for (str = J->gcstr; str; str = nextstr) {
+jsgc.c:	for (env = J->gcenv; env; env = nextenv)
+jsgc.c:	for (fun = J->gcfun; fun; fun = nextfun)
+jsgc.c:	for (obj = J->gcobj; obj; obj = nextobj)
+jsgc.c:	for (str = J->gcstr; str; str = nextstr)
+jsgc.c:	js_free(J, J->lexbuf.text);
+jsgc.c:	J->alloc(J->actx, J->stack, 0);
+jsgc.c:	J->alloc(J->actx, J, 0);
+jscompile.c:	snprintf(buf, 256, "%s:%d: ", J->filename, node->line);
+jscompile.c:	F->gcnext = J->gcfun;
+jscompile.c:	J->gcfun = F;
+jscompile.c:	++J->gccounter;
+jscompile.c:	F->filename = js_intern(J, J->filename);
+jscompile.c:				js_evalerror(J, "%s:%d: invalid use of 'eval'", J->filename, node->line);
+jscompile.c:	return newfun(J, prog->a, prog->b, prog->c, 0, J->default_strict);
+jscompile.c:	return newfun(J, NULL, NULL, prog, 1, J->default_strict);
+Binary file build/release/mujs-pp matches
+Binary file build/release/mujs matches
+jsparse.c:#define INCREC() if (++J->astdepth > JS_ASTLIMIT) jsP_error(J, "too much recursion")
+jsparse.c:#define DECREC() --J->astdepth
+jsparse.c:#define SAVEREC() int SAVE=J->astdepth
+jsparse.c:#define POPREC() J->astdepth=SAVE
+jsparse.c:	snprintf(buf, 256, "%s:%d: ", J->filename, J->lexline);
+jsparse.c:	snprintf(buf, sizeof buf, "%s:%d: warning: %s", J->filename, J->lexline, msg);
+jsparse.c:	node->line = J->astline;
+jsparse.c:	node->gcnext = J->gcast;
+jsparse.c:	J->gcast = node;
+jsparse.c:	js_Ast *node = J->gcast;
+jsparse.c:	J->gcast = NULL;
+jsparse.c:	J->lookahead = jsY_lex(J);
+jsparse.c:	J->astline = J->lexline;
+jsparse.c:#define jsP_accept(J,x) (J->lookahead == x ? (jsP_next(J), 1) : 0)
+jsparse.c:#define jsP_expect(J,x) if (!jsP_accept(J, x)) jsP_error(J, "unexpected token: %s (expected %s)", jsY_tokenstring(J->lookahead), jsY_tokenstring(x))
+jsparse.c:	if (J->lookahead == ';') {
+jsparse.c:	if (J->newline || J->lookahead == '}' || J->lookahead == 0)
+jsparse.c:	jsP_error(J, "unexpected token: %s (expected ';')", jsY_tokenstring(J->lookahead));
+jsparse.c:	if (J->lookahead == TK_IDENTIFIER) {
+jsparse.c:		a = jsP_newstrnode(J, AST_IDENTIFIER, J->text);
+jsparse.c:	jsP_error(J, "unexpected token: %s (expected identifier)", jsY_tokenstring(J->lookahead));
+jsparse.c:	if (J->lookahead == TK_IDENTIFIER)
+jsparse.c:	if (J->lookahead == TK_IDENTIFIER || J->lookahead >= TK_BREAK) {
+jsparse.c:		js_Ast *a = jsP_newstrnode(J, AST_IDENTIFIER, J->text);
+jsparse.c:	jsP_error(J, "unexpected token: %s (expected identifier or keyword)", jsY_tokenstring(J->lookahead));
+jsparse.c:	if (J->lookahead == ',')
+jsparse.c:	if (J->lookahead == ']')
+jsparse.c:		if (J->lookahead != ']')
+jsparse.c:	if (J->lookahead == TK_NUMBER) {
+jsparse.c:		name = jsP_newnumnode(J, EXP_NUMBER, J->number);
+jsparse.c:	} else if (J->lookahead == TK_STRING) {
+jsparse.c:		name = jsP_newstrnode(J, EXP_STRING, J->text);
+jsparse.c:	if (J->lookahead != ':' && name->type == AST_IDENTIFIER) {
+jsparse.c:	if (J->lookahead == '}')
+jsparse.c:		if (J->lookahead == '}')
+jsparse.c:	if (J->lookahead == ')')
+jsparse.c:	if (J->lookahead == TK_IDENTIFIER) {
+jsparse.c:		a = jsP_newstrnode(J, EXP_IDENTIFIER, J->text);
+jsparse.c:	if (J->lookahead == TK_STRING) {
+jsparse.c:		a = jsP_newstrnode(J, EXP_STRING, J->text);
+jsparse.c:	if (J->lookahead == TK_REGEXP) {
+jsparse.c:		a = jsP_newstrnode(J, EXP_REGEXP, J->text);
+jsparse.c:		a->number = J->number;
+jsparse.c:	if (J->lookahead == TK_NUMBER) {
+jsparse.c:		a = jsP_newnumnode(J, EXP_NUMBER, J->number);
+jsparse.c:	jsP_error(J, "unexpected token in expression: %s", jsY_tokenstring(J->lookahead));
+jsparse.c:	if (J->lookahead == ')')
+jsparse.c:	if (!J->newline && jsP_accept(J, TK_INC)) return EXP1(POSTINC, a);
+jsparse.c:	if (!J->newline && jsP_accept(J, TK_DEC)) return EXP1(POSTDEC, a);
+jsparse.c:	if (J->lookahead == '}' || J->lookahead == TK_CASE || J->lookahead == TK_DEFAULT)
+jsparse.c:	while (J->lookahead != '}' && J->lookahead != TK_CASE && J->lookahead != TK_DEFAULT)
+jsparse.c:	jsP_error(J, "unexpected token in switch: %s (expected 'case' or 'default')", jsY_tokenstring(J->lookahead));
+jsparse.c:	if (J->lookahead == '}')
+jsparse.c:	while (J->lookahead != '}')
+jsparse.c:	if (J->lookahead != end)
+jsparse.c:		jsP_error(J, "unexpected token in for-var-statement: %s", jsY_tokenstring(J->lookahead));
+jsparse.c:	if (J->lookahead != ';')
+jsparse.c:	jsP_error(J, "unexpected token in for-statement: %s", jsY_tokenstring(J->lookahead));
+jsparse.c:	if (J->lookahead == '{') {
+jsparse.c:		if (J->lookahead != ';' && J->lookahead != '}' && J->lookahead != 0)
+jsparse.c:			jsP_error(J, "unexpected token in try: %s (expected 'catch' or 'finally')", jsY_tokenstring(J->lookahead));
+jsparse.c:	else if (J->lookahead == TK_IDENTIFIER) {
+jsparse.c:	if (J->lookahead == terminator)
+jsparse.c:	while (J->lookahead != terminator)
+jsparse.c:	J->astdepth = 0;
+jsparse.c:		J->astdepth = 0;
+jsrun.c:#define STACK (J->stack)
+jsrun.c:#define TOP (J->top)
+jsrun.c:#define BOT (J->bot)
+jsrun.c:	void *ptr = J->alloc(J->actx, NULL, size);
+jsrun.c:	ptr = J->alloc(J->actx, ptr, size);
+jsrun.c:	J->alloc(J->actx, ptr, 0);
+jsrun.c:	v->gcnext = J->gcstr;
+jsrun.c:	J->gcstr = v;
+jsrun.c:	++J->gccounter;
+jsrun.c:	js_pushobject(J, J->G);
+jsrun.c:			if (J->strict)
+jsrun.c:	if (J->strict)
+jsrun.c:			else if (J->strict)
+jsrun.c:			else if (J->strict)
+jsrun.c:			else if (J->strict)
+jsrun.c:	if (J->strict)
+jsrun.c:	if (J->strict)
+jsrun.c:		sprintf(buf, "%d", J->nextref++);
+jsrun.c:	jsR_getproperty(J, J->R, name);
+jsrun.c:	jsR_setproperty(J, J->R, name);
+jsrun.c:	jsR_delproperty(J, J->R, name);
+jsrun.c:	jsR_getproperty(J, J->G, name);
+jsrun.c:	jsR_setproperty(J, J->G, name);
+jsrun.c:	jsR_defproperty(J, J->G, name, atts, stackidx(J, -1), NULL, NULL);
+jsrun.c:	E->gcnext = J->gcenv;
+jsrun.c:	J->gcenv = E;
+jsrun.c:	++J->gccounter;
+jsrun.c:	jsR_defproperty(J, J->E->variables, name, JS_DONTENUM | JS_DONTCONF, stackidx(J, idx), NULL, NULL);
+jsrun.c:	jsR_defproperty(J, J->E->variables, name, JS_DONTENUM | JS_DONTCONF, NULL, NULL, NULL);
+jsrun.c:	js_Environment *E = J->E;
+jsrun.c:	js_Environment *E = J->E;
+jsrun.c:			else if (J->strict)
+jsrun.c:	if (J->strict)
+jsrun.c:	jsR_setproperty(J, J->G, name);
+jsrun.c:	js_Environment *E = J->E;
+jsrun.c:				if (J->strict)
+jsrun.c:	return jsR_delproperty(J, J->G, name);
+jsrun.c:	if (J->envtop + 1 >= JS_ENVLIMIT)
+jsrun.c:	J->envstack[J->envtop++] = J->E;
+jsrun.c:	J->E = newE;
+jsrun.c:	J->E = J->envstack[--J->envtop];
+jsrun.c:		if (!J->strict) {
+jsrun.c:	if (J->tracetop + 1 == JS_ENVLIMIT)
+jsrun.c:	++J->tracetop;
+jsrun.c:	J->trace[J->tracetop].name = name;
+jsrun.c:	J->trace[J->tracetop].file = file;
+jsrun.c:	J->trace[J->tracetop].line = line;
+jsrun.c:		--J->tracetop;
+jsrun.c:		--J->tracetop;
+jsrun.c:		--J->tracetop;
+jsrun.c:		--J->tracetop;
+jsrun.c:		prototype = J->Object_prototype;
+jsrun.c:	if (J->trytop == JS_TRYLIMIT)
+jsrun.c:	J->trybuf[J->trytop].E = J->E;
+jsrun.c:	J->trybuf[J->trytop].envtop = J->envtop;
+jsrun.c:	J->trybuf[J->trytop].tracetop = J->tracetop;
+jsrun.c:	J->trybuf[J->trytop].top = J->top;
+jsrun.c:	J->trybuf[J->trytop].bot = J->bot;
+jsrun.c:	J->trybuf[J->trytop].strict = J->strict;
+jsrun.c:	J->trybuf[J->trytop].pc = pc;
+jsrun.c:	return J->trybuf[J->trytop++].buf;
+jsrun.c:	if (J->trytop == JS_TRYLIMIT)
+jsrun.c:	J->trybuf[J->trytop].E = J->E;
+jsrun.c:	J->trybuf[J->trytop].envtop = J->envtop;
+jsrun.c:	J->trybuf[J->trytop].tracetop = J->tracetop;
+jsrun.c:	J->trybuf[J->trytop].top = J->top;
+jsrun.c:	J->trybuf[J->trytop].bot = J->bot;
+jsrun.c:	J->trybuf[J->trytop].strict = J->strict;
+jsrun.c:	J->trybuf[J->trytop].pc = NULL;
+jsrun.c:	return J->trybuf[J->trytop++].buf;
+jsrun.c:	if (J->trytop == 0)
+jsrun.c:	--J->trytop;
+jsrun.c:	if (J->trytop > 0) {
+jsrun.c:		--J->trytop;
+jsrun.c:		J->E = J->trybuf[J->trytop].E;
+jsrun.c:		J->envtop = J->trybuf[J->trytop].envtop;
+jsrun.c:		J->tracetop = J->trybuf[J->trytop].tracetop;
+jsrun.c:		J->top = J->trybuf[J->trytop].top;
+jsrun.c:		J->bot = J->trybuf[J->trytop].bot;
+jsrun.c:		J->strict = J->trybuf[J->trytop].strict;
+jsrun.c:		longjmp(J->trybuf[J->trytop].buf, 1);
+jsrun.c:	if (J->panic)
+jsrun.c:		J->panic(J);
+jsrun.c:	for (n = J->tracetop; n >= 0; --n) {
+jsrun.c:		const char *name = J->trace[n].name;
+jsrun.c:		const char *file = J->trace[n].file;
+jsrun.c:		int line = J->trace[n].line;
+jsrun.c:	jsR_dumpenvironment(J, J->E, 0);
+jsrun.c:	savestrict = J->strict;
+jsrun.c:	J->strict = F->strict;
+jsrun.c:		if (J->gccounter > JS_GCLIMIT) {
+jsrun.c:			J->gccounter = 0;
+jsrun.c:		case OP_CLOSURE: js_newfunction(J, FT[*pc++], J->E); break;
+jsrun.c:			if (J->strict) {
+jsrun.c:				pc = J->trybuf[J->trytop].pc;
+jsrun.c:			J->E = jsR_newenvironment(J, obj, J->E);
+jsrun.c:			J->E = J->E->outer;
+jsrun.c:			J->E = jsR_newenvironment(J, obj, J->E);
+jsrun.c:			J->E = J->E->outer;
+jsrun.c:			J->strict = savestrict;
+jsrun.c:			J->trace[J->tracetop].line = *pc++;
+Binary file .jsdate.c.swp matches
+jslex.c:	snprintf(buf, 256, "%s:%d: ", J->filename, J->lexline);
+jslex.c:		J->text = keywords[i];
+jslex.c:	J->text = js_intern(J, s);
+jslex.c:	J->source += chartorune(&c, J->source);
+jslex.c:	if (c == '\r' && *J->source == '\n')
+jslex.c:		++J->source;
+jslex.c:		J->line++;
+jslex.c:	J->lexchar = c;
+jslex.c:#define jsY_accept(J, x) (J->lexchar == x ? (jsY_next(J), 1) : 0)
+jslex.c:			if (!jsY_ishex(J->lexchar)) { goto error; } x |= jsY_tohex(J->lexchar) << 12; jsY_next(J);
+jslex.c:			if (!jsY_ishex(J->lexchar)) { goto error; } x |= jsY_tohex(J->lexchar) << 8; jsY_next(J);
+jslex.c:			if (!jsY_ishex(J->lexchar)) { goto error; } x |= jsY_tohex(J->lexchar) << 4; jsY_next(J);
+jslex.c:			if (!jsY_ishex(J->lexchar)) { goto error; } x |= jsY_tohex(J->lexchar);
+jslex.c:			J->lexchar = x;
+jslex.c:	if (!J->lexbuf.text) {
+jslex.c:		J->lexbuf.cap = 4096;
+jslex.c:		J->lexbuf.text = js_malloc(J, J->lexbuf.cap);
+jslex.c:	J->lexbuf.len = 0;
+jslex.c:	if (J->lexbuf.len + n > J->lexbuf.cap) {
+jslex.c:		J->lexbuf.cap = J->lexbuf.cap * 2;
+jslex.c:		J->lexbuf.text = js_realloc(J, J->lexbuf.text, J->lexbuf.cap);
+jslex.c:	J->lexbuf.len += runetochar(J->lexbuf.text + J->lexbuf.len, &c);
+jslex.c:	return J->lexbuf.text;
+jslex.c:	while (J->lexchar && J->lexchar != '\n')
+jslex.c:	while (J->lexchar != 0) {
+jslex.c:			while (J->lexchar == '*')
+jslex.c:	if (!jsY_ishex(J->lexchar))
+jslex.c:	while (jsY_ishex(J->lexchar)) {
+jslex.c:		n = n * 16 + jsY_tohex(J->lexchar);
+jslex.c:	if (!jsY_isdec(J->lexchar))
+jslex.c:	while (jsY_isdec(J->lexchar)) {
+jslex.c:		n = n * 10 + (J->lexchar - '0');
+jslex.c:	while (jsY_isdec(J->lexchar)) {
+jslex.c:		n = n * 10 + (J->lexchar - '0');
+jslex.c:			J->number = lexhex(J);
+jslex.c:		if (jsY_isdec(J->lexchar))
+jslex.c:		if (!jsY_isdec(J->lexchar))
+jslex.c:	if (jsY_isidentifierstart(J->lexchar))
+jslex.c:	J->number = n;
+jslex.c:	const char *s = J->source - 1;
+jslex.c:			J->number = lexhex(J);
+jslex.c:		if (jsY_isdec(J->lexchar))
+jslex.c:			while (jsY_isdec(J->lexchar))
+jslex.c:		if (!jsY_isdec(J->lexchar))
+jslex.c:		while (jsY_isdec(J->lexchar))
+jslex.c:		while (jsY_isdec(J->lexchar))
+jslex.c:			while (jsY_isdec(J->lexchar))
+jslex.c:		if (J->lexchar == '-' || J->lexchar == '+')
+jslex.c:		if (jsY_isdec(J->lexchar))
+jslex.c:			while (jsY_isdec(J->lexchar))
+jslex.c:	if (jsY_isidentifierstart(J->lexchar))
+jslex.c:	J->number = js_strtod(s, NULL);
+jslex.c:	switch (J->lexchar) {
+jslex.c:		if (!jsY_ishex(J->lexchar)) return 1; else { x |= jsY_tohex(J->lexchar) << 12; jsY_next(J); }
+jslex.c:		if (!jsY_ishex(J->lexchar)) return 1; else { x |= jsY_tohex(J->lexchar) << 8; jsY_next(J); }
+jslex.c:		if (!jsY_ishex(J->lexchar)) return 1; else { x |= jsY_tohex(J->lexchar) << 4; jsY_next(J); }
+jslex.c:		if (!jsY_ishex(J->lexchar)) return 1; else { x |= jsY_tohex(J->lexchar); jsY_next(J); }
+jslex.c:		if (!jsY_ishex(J->lexchar)) return 1; else { x |= jsY_tohex(J->lexchar) << 4; jsY_next(J); }
+jslex.c:		if (!jsY_ishex(J->lexchar)) return 1; else { x |= jsY_tohex(J->lexchar); jsY_next(J); }
+jslex.c:	default: textpush(J, J->lexchar); jsY_next(J); break;
+jslex.c:	int q = J->lexchar;
+jslex.c:	while (J->lexchar != q) {
+jslex.c:		if (J->lexchar == 0 || J->lexchar == '\n')
+jslex.c:			textpush(J, J->lexchar);
+jslex.c:	J->text = js_intern(J, s);
+jslex.c:	while (J->lexchar != '/' || inclass) {
+jslex.c:		if (J->lexchar == 0 || J->lexchar == '\n') {
+jslex.c:				if (J->lexchar == 0 || J->lexchar == '\n')
+jslex.c:				textpush(J, J->lexchar);
+jslex.c:			if (J->lexchar == '[' && !inclass)
+jslex.c:			if (J->lexchar == ']' && inclass)
+jslex.c:			textpush(J, J->lexchar);
+jslex.c:	while (jsY_isidentifierpart(J->lexchar)) {
+jslex.c:		else jsY_error(J, "illegal flag in regular expression: %c", J->lexchar);
+jslex.c:	J->text = js_intern(J, s);
+jslex.c:	J->number = 0;
+jslex.c:	if (g) J->number += JS_REGEXP_G;
+jslex.c:	if (i) J->number += JS_REGEXP_I;
+jslex.c:	if (m) J->number += JS_REGEXP_M;
+jslex.c:	J->newline = 0;
+jslex.c:		J->lexline = J->line; /* save location of beginning of token */
+jslex.c:		while (jsY_iswhite(J->lexchar))
+jslex.c:			J->newline = 1;
+jslex.c:			if (isnlthcontext(J->lasttoken))
+jslex.c:			} else if (isregexpcontext(J->lasttoken)) {
+jslex.c:		if (J->lexchar >= '0' && J->lexchar <= '9') {
+jslex.c:		switch (J->lexchar) {
+jslex.c:		if (jsY_isidentifierstart(J->lexchar)) {
+jslex.c:			textpush(J, J->lexchar);
+jslex.c:			while (jsY_isidentifierpart(J->lexchar)) {
+jslex.c:				textpush(J, J->lexchar);
+jslex.c:			return jsY_findkeyword(J, J->lexbuf.text);
+jslex.c:		if (J->lexchar >= 0x20 && J->lexchar <= 0x7E)
+jslex.c:			jsY_error(J, "unexpected character: '%c'", J->lexchar);
+jslex.c:		jsY_error(J, "unexpected character: \\u%04X", J->lexchar);
+jslex.c:	J->filename = filename;
+jslex.c:	J->source = source;
+jslex.c:	J->line = 1;
+jslex.c:	J->lasttoken = 0;
+jslex.c:	return J->lasttoken = jsY_lexx(J);
+jslex.c:	const char *s = J->source - 1;
+jslex.c:	if (J->lexchar == '-')
+jslex.c:	if (J->lexchar == '0')
+jslex.c:	else if (J->lexchar >= '1' && J->lexchar <= '9')
+jslex.c:		while (isdigit(J->lexchar))
+jslex.c:		if (isdigit(J->lexchar))
+jslex.c:			while (isdigit(J->lexchar))
+jslex.c:		if (J->lexchar == '-' || J->lexchar == '+')
+jslex.c:		if (isdigit(J->lexchar))
+jslex.c:			while (isdigit(J->lexchar))
+jslex.c:	J->number = js_strtod(s, NULL);
+jslex.c:	switch (J->lexchar) {
+jslex.c:		if (!jsY_ishex(J->lexchar)) return 1; else { x |= jsY_tohex(J->lexchar) << 12; jsY_next(J); }
+jslex.c:		if (!jsY_ishex(J->lexchar)) return 1; else { x |= jsY_tohex(J->lexchar) << 8; jsY_next(J); }
+jslex.c:		if (!jsY_ishex(J->lexchar)) return 1; else { x |= jsY_tohex(J->lexchar) << 4; jsY_next(J); }
+jslex.c:		if (!jsY_ishex(J->lexchar)) return 1; else { x |= jsY_tohex(J->lexchar); jsY_next(J); }
+jslex.c:	while (J->lexchar != '"') {
+jslex.c:		if (J->lexchar == 0)
+jslex.c:		else if (J->lexchar < 32)
+jslex.c:			textpush(J, J->lexchar);
+jslex.c:	J->text = js_intern(J, s);
+jslex.c:		J->lexline = J->line; /* save location of beginning of token */
+jslex.c:		while (jsY_iswhite(J->lexchar) || J->lexchar == '\n')
+jslex.c:		if ((J->lexchar >= '0' && J->lexchar <= '9') || J->lexchar == '-')
+jslex.c:		switch (J->lexchar) {
+jslex.c:		if (J->lexchar >= 0x20 && J->lexchar <= 0x7E)
+jslex.c:			jsY_error(J, "unexpected character: '%c'", J->lexchar);
+jslex.c:		jsY_error(J, "unexpected character: \\u%04X", J->lexchar);

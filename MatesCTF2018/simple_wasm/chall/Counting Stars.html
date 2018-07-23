@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counting Stars</title>
+    <script src="./loader.js"></script>
+    <script src="./sha256.js"></script>
+    <script>
+        function check(number) {
+            loadWasm('./counting.wasm').then(instance => {
+                const { count, start } = instance.exports
+
+                start(1);
+                var result = 0;
+                var quo = number / (1 << 30) | 0;
+                var rem = number % (1 << 30);
+            
+                while(quo--) {
+                    result += count(0, 1 << 30, 1, 0);
+                }
+
+                result +=  count(0, rem, 1, 0);
+
+                if (result == 14827558276137 && sha256(number.toString()) == '2425B420A31A04F84A98F88D3286264A6FB0BB89087BD4C526640C6841DD536A'.toLowerCase()) {
+                    alert('matesctf{' + number.toString() + '}');
+                }
+                else {
+                    alert('Try again!');
+                }
+            });
+        }
+
+        function main() {
+            var textElem = document.getElementById("key_number");
+            var buttonElem = document.getElementById("check_btn");
+            buttonElem.onclick = function() {check(Number(textElem.value))};
+        }
+    </script>            
+</head>
+
+<body onload="main()">
+    <h1>Counting Stars</h1>
+    <p>Enter your key number.</p>
+    <input type="text" id="key_number"></input>
+    <input type="button" id="check_btn" value="Check"></input>
+    <br>
+    <i>The flag has format matesctf{key_number}.</i>
+</body>
+</html>
