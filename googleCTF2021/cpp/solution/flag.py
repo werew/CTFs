@@ -1,0 +1,32 @@
+d = {'Flag_16' : 95,
+ 'Flag_9' : 48,
+ 'Flag_22' : 53,
+ 'Flag_4' : 112,
+ 'Flag_5' : 114,
+ 'Flag_24' : 111,
+ 'Flag_14' : 48,
+ 'Flag_23' : 115,
+ 'Flag_12' : 115,
+ 'Flag_11' : 101,
+ 'Flag_10' : 99,
+ 'Flag_17' : 112,
+ 'Flag_7' : 112,
+ 'Flag_18' : 114,
+ 'Flag_25' : 114,
+ 'Flag_21' : 101,
+ 'Flag_20' : 102,
+ 'Flag_13' : 115,
+ 'Flag_8' : 114,
+ 'Flag_15' : 114,
+ 'Flag_6' : 51,
+ 'Flag_19' : 48,
+ 'Flag_26' : 125,
+ 'Flag_3' : 123,
+ 'Flag_2' : 70,
+ 'Flag_1' : 84,
+ 'Flag_0' : 67,
+}
+
+flag = ''.join([chr(d[f"Flag_{i}"]) for i in range(27)])
+print(flag)
+    
