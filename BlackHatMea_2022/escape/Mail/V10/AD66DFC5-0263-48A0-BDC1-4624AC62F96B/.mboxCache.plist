@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mboxes</key>
+	<dict>
+		<key>Drafts</key>
+		<dict>
+			<key>IMAPMailboxAttributes</key>
+			<integer>256</integer>
+			<key>IMAPMailboxChildren</key>
+			<dict/>
+			<key>MailboxID</key>
+			<string>37C1E78A-4B6E-4638-9154-07519F0C18BD</string>
+			<key>MailboxIsManuallySorted</key>
+			<false/>
+			<key>MailboxPathComponent</key>
+			<string>Drafts</string>
+			<key>MailboxUnreadCount</key>
+			<integer>0</integer>
+		</dict>
+		<key>SendLater</key>
+		<dict>
+			<key>IMAPMailboxAttributes</key>
+			<integer>768</integer>
+			<key>IMAPMailboxChildren</key>
+			<dict/>
+			<key>MailboxID</key>
+			<string>68D7AC5E-F4AF-48D9-B491-5DE09F088A7A</string>
+			<key>MailboxIsManuallySorted</key>
+			<false/>
+			<key>MailboxPathComponent</key>
+			<string>SendLater</string>
+			<key>MailboxUnreadCount</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

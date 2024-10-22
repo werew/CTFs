@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>IMAPMailboxAttributes</key>
+		<integer>17</integer>
+		<key>MailboxAllCriteriaMustBeSatisfied</key>
+		<true/>
+		<key>MailboxChildren</key>
+		<array/>
+		<key>MailboxCriteria</key>
+		<array>
+			<dict>
+				<key>CriterionUniqueId</key>
+				<string>489b8c24-5d7e-4751-9fb0-55c327da3f58</string>
+				<key>Header</key>
+				<string>NotInTrashMailbox</string>
+				<key>Name</key>
+				<string>omit trash</string>
+			</dict>
+			<dict>
+				<key>CriterionUniqueId</key>
+				<string>dfe60545-a5be-48ed-b39a-c764273fe2d2</string>
+				<key>Header</key>
+				<string>NotInASpecialMailbox</string>
+				<key>Name</key>
+				<string>omit sent</string>
+				<key>SpecialMailboxType</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>AllCriteriaMustBeSatisfied</key>
+				<true/>
+				<key>Criteria</key>
+				<array>
+					<dict>
+						<key>AllCriteriaMustBeSatisfied</key>
+						<true/>
+						<key>Criteria</key>
+						<array>
+							<dict>
+								<key>CriterionUniqueId</key>
+								<string>b308aa7a-9239-4886-afbb-73af50840d96</string>
+								<key>DateIsRelative</key>
+								<true/>
+								<key>DateUnitType</key>
+								<integer>1</integer>
+								<key>Expression</key>
+								<string>-1</string>
+								<key>Header</key>
+								<string>DateLastViewed</string>
+								<key>Qualifier</key>
+								<string>IsGreaterThan</string>
+							</dict>
+							<dict>
+								<key>CriterionUniqueId</key>
+								<string>6355b0fc-7ce2-4aad-bf80-5ababa134107</string>
+								<key>DateIsRelative</key>
+								<true/>
+								<key>DateUnitType</key>
+								<integer>1</integer>
+								<key>Expression</key>
+								<string>1</string>
+								<key>Header</key>
+								<string>DateLastViewed</string>
+								<key>Qualifier</key>
+								<string>IsLessThan</string>
+							</dict>
+						</array>
+						<key>CriterionUniqueId</key>
+						<string>7d787b68-a7b2-47d5-bebc-b1a4ad4eab3c</string>
+						<key>Header</key>
+						<string>Compound</string>
+						<key>Name</key>
+						<string>today</string>
+					</dict>
+				</array>
+				<key>CriterionUniqueId</key>
+				<string>afd6b13e-c9b3-4a55-8e36-a61f21c19276</string>
+				<key>Header</key>
+				<string>Compound</string>
+				<key>Name</key>
+				<string>user criteria</string>
+			</dict>
+			<dict>
+				<key>CriterionUniqueId</key>
+				<string>388a2e77-ae9a-4e9d-afa0-27f78f587eeb</string>
+				<key>Header</key>
+				<string>NotInJunkMailbox</string>
+				<key>Name</key>
+				<string>omit junk</string>
+			</dict>
+		</array>
+		<key>MailboxID</key>
+		<string>d58006cb-eaef-4101-82a7-c161382eb1d0</string>
+		<key>MailboxName</key>
+		<string>Today</string>
+		<key>MailboxType</key>
+		<integer>7</integer>
+	</dict>
+</array>
+</plist>
