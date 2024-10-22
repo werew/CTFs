@@ -1,0 +1,13 @@
+0x65 ptrace
+38 clone
+1b3 
+39 fork
+3a vfork
+3e kill
+b munmap
+11 pread64
+10 ioctl
+13 readv
+
+
+
