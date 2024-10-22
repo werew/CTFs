@@ -1,0 +1,8 @@
+node_modules
+build
+contracts/attacker-contracts/*.sol
+cache
+.openzeppelin
+.vscode
+artifacts
+cache
